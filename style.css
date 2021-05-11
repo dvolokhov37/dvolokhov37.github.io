@@ -1,0 +1,435 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body,html{
+	height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(22, 20, 20, 0.815);
+
+	background-color:seashell;
+}
+
+a{
+	text-decoration: none;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+
+
+
+.wraper{
+	min-height: 100%;
+	padding-bottom: 150px;
+}
+
+.content{ 
+	padding-bottom: 20px;
+}
+
+/*Container
+========*/
+.container {
+  width: 96%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+
+/*Header
+========*/
+
+.header{
+	width: 100%;
+	height: 310px;
+    position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.header__inner{
+       display: flex;
+	   justify-content: space-between;
+	   align-items: center;
+	   margin: 10px 0 0;
+	   padding: 15px 0;
+
+	   border-bottom: 2px solid
+	    darkred; 
+		border-top: 2px solid
+	    darkred;
+	
+}
+
+
+.search-box{
+	margin: 0 15px 150px 0;
+	display: flex;
+	background-color: slateblue;
+	height: 40px;
+	border-radius: 40px;
+	padding: 10px;
+} 
+
+.search-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+
+.bumms{
+	text-align:center;
+}
+
+
+/*Nav
+========*/
+
+.nav{
+   display: flex;
+   /*font-size: 10px;*/
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.nav__link{
+	margin-left: 104px;
+
+    color:rgb(7,3,61);
+	padding: 7px;
+	margin-top: 7px;
+	background-color:slateblue;
+	border-radius: 20px;
+    text-decoration: none;
+	font-size:large;
+    opacity: .85;
+
+    transition: opacity .2s
+	linear;
+}
+
+.nav__link:hover{
+	opacity: 1;
+}
+
+
+/*Intro
+========*/
+
+.intro{
+	height: 750px;
+	padding-top: 310px;
+
+	background: seashell;
+}
+
+.stat{
+	border:solid 4px /*#634f36*/ #554531; /* Параметры рамки */
+    background: #fffff5; /* Цвет фона */
+	width: 900px;
+	height: 600px;
+	margin-top: 10px;
+	margin-left: 225px;
+}
+
+.photo{
+   position: relative;
+   width: 500px;
+   height: 350px;
+   margin: 0 7px 0 0; /* Отступы вокруг картинки */
+   float: left; /* Обтекание картинки текстом */
+}
+
+.text{
+    font-family: 'Montserrat', sans-serif; /* Шрифт текста */
+	font-size: 18px;
+    margin: 0 50px 0 50px; /* Отступы вокруг */
+	padding: 0 0 20px 0;
+	text-align: justify;
+
+}
+
+.pos{
+	padding: 0 0 5px 25px;
+}
+
+/*Button
+========*/
+
+
+.btn{
+	display: inline-block;
+	padding: 14px 10px;
+	margin:0 0 0 480px;
+    
+    border-radius: 3px;
+	border: 0;
+	cursor: pointer;
+
+    font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.btn--purp{
+	background-color: purple;
+}
+
+.btn--purp:hover{
+	background-color: rgb(88, 12, 88);
+}
+
+
+/*Погода
+=========*/
+
+.card{
+	display: inline-block;
+	font-family: serif;
+	text-align: center;
+	width: 134px;
+	height: 180px;
+  }
+  
+  .card:hover{
+	box-shadow: 0 0 7px black;
+  }
+  
+  .date{
+	display: flex;
+	justify-content: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	align-items: center;
+	height: 30px;
+	background-color: #0097B9;
+	color: white;
+  }
+  
+  .icon{
+	width: 114px;
+	height: 94px;
+	background-color:aliceblue;
+	margin: 0 auto 19px;
+  }
+  
+  .oblako{
+	background-image: url(images/облачно.jpg);
+  }
+
+  .sun {
+	background-image: url(images/солнце.jpg);
+  }
+  
+  .dozhd {
+	background-image: url(images/дождик.jpg);
+  }
+  
+  
+  .temperature{
+	font-size: 21px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .temperature::after{
+	content: "°";
+  }
+
+  .zagolPog{
+    text-align: center;
+	padding-bottom: 10px;
+	font-size: 23px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .polozhenie{
+	  margin-left: 50px;
+  }
+
+/*Форма
+========*/
+
+.forma{
+	width: auto;
+	font-weight:bolder;
+}
+
+#form_message{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 5px;
+	margin:30px;
+	padding: 10px;
+    width: 1000px;
+	height: 100%;
+}
+
+#form_message input,textarea{
+	border-radius: 5px;
+	width: 170px;
+	font-weight:bolder;
+}
+
+#submit{
+	height: 50px;
+	float: right;
+}
+
+#form_message h2{
+	text-align: center;
+}
+
+/*Sport
+=======*/
+
+.sport{
+	border:solid 4px #554531; /* Параметры рамки */
+    background: #fffff5; /* Цвет фона */
+	width: 1050px;
+	height: 500px;
+	margin-top: 10px;
+	margin-left: 150px;
+}
+
+.sport2{
+	border:solid 4px #554531; /* Параметры рамки */
+    background: #fffff5; /* Цвет фона */
+	width: 1050px;
+	height: 600px;
+	margin-top: 10px;
+	margin-left: 150px;
+}
+.sportPhoto1{
+	position: relative;
+	width: 600px;
+	height: 300px;
+	margin: 0 7px 0 0; /* Отступы вокруг картинки */
+	float: left; /* Обтекание картинки текстом */
+}
+
+
+.frameSport{
+	padding: 0 20px 20px 50px;
+}
+
+.SportTxt1{
+	font-family: 'Montserrat', sans-serif; /* Шрифт текста */
+	font-size: 18px;
+    margin: 10px 50px 50px 50px; /* Отступы вокруг */
+	padding: 0 0 20px 0;
+	text-align: justify;
+}
+
+.SportTxt2{
+	font-family: 'Montserrat', sans-serif; /* Шрифт текста */
+	font-size: 18px;
+
+    margin: 0 50px 0 50px; /* Отступы вокруг */
+	padding: 10px 0 0 0;
+	text-align: justify;
+}
+
+.btnSport1{
+	display: inline-block;
+	padding: 14px 10px;
+	margin:0 0 0 600px;
+    
+    border-radius: 3px;
+	border: 0;
+	cursor: pointer;
+
+    font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.btnSport2{
+	display: inline-block;
+	padding: 14px 10px;
+	margin:0 0 0 600px;
+    
+    border-radius: 3px;
+	border: 0;
+	cursor: pointer;
+
+    font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+/*Umor
+========*/
+
+/*V mire zhivotnix
+========*/
+
+.zagolSmail{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: x-large;
+}
+
+.smail{
+	vertical-align:middle;
+}
+
+.zagolMir{
+	font-size: 140%;
+	margin:20px 0 20px 100px;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.mir{
+	border:solid 4px /*#634f36*/ #554531; /* Параметры рамки */
+    background: #fffff5; /* Цвет фона */
+	width: 855px;
+	height: 580px;
+	margin: 10px 226px;
+}
+
+.photoMir{
+	position: relative;
+	margin: 0 7px 0 0; /* Отступы вокруг картинки */
+	float: left; /* Обтекание картинки текстом */
+}
+
+/*Podval
+========*/
+
+.footer {
+    position: fixed ; /* Фиксированное положение*/
+    left: 0; bottom: 0; /* Левый нижний угол*/ 
+    padding: 5px; /* Поля вокруг текста */
+
+    text-align:left;
+	font-weight: bolder;
+
+    background: #e64949; /* Цвет фона*/ 
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+	/*margin-top: -80px;*/
+   }
+   
